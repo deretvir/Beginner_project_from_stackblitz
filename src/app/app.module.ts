@@ -18,7 +18,6 @@ import {InputComponent} from './input/input.component';
   imports:      [
     BrowserModule
     , CommonModule
-    , FormsModule 
     , BrowserAnimationsModule
     , FormsModule
     , HttpClientModule
