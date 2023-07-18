@@ -13,6 +13,8 @@ import {DemoMaterialModule} from '../material.module';
 import { AppComponent } from './app.component';
 import {BtnComponent} from './btn/btn.component';
 import {InputComponent} from './input/input.component';
+import {TestBtnComponent} from './test-btn/test-btn.component';
+import {TestParagraphComponent}  from'./test-paragraph/test-paragraph.component';
 
 @NgModule({
   imports:      [
@@ -26,7 +28,7 @@ import {InputComponent} from './input/input.component';
     , ReactiveFormsModule
   ],
   entryComponents: [  ],
-  declarations: [ AppComponent,BtnComponent,InputComponent ],
+  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
