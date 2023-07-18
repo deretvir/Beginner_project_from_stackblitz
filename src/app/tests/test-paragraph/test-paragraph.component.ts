@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-test-paragraph',
-  template:`tescik`,
+  template:`tescik {{onStatus}}`,
   styleUrls: ['./test-paragraph.component.css']
 })
-export class TestParagraphComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class TestParagraphComponent {
+@Input() onStatus:boolean;
 
 }
