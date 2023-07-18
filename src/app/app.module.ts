@@ -13,8 +13,8 @@ import {DemoMaterialModule} from '../material.module';
 import { AppComponent } from './app.component';
 import {BtnComponent} from './btn/btn.component';
 import {InputComponent} from './input/input.component';
-import {TestBtnComponent} from './test-btn/test-btn.component';
-import {TestParagraphComponent}  from'./test-paragraph/test-paragraph.component';
+import {TestBtnComponent} from './tests/test-btn/test-btn.component';
+import {TestParagraphComponent}  from'./tests/test-paragraph/test-paragraph.component';
 
 @NgModule({
   imports:      [
