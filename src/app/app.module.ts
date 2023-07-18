@@ -16,6 +16,8 @@ import {InputComponent} from './input/input.component';
 import {TestBtnComponent} from './tests/test-btn/test-btn.component';
 import {TestParagraphComponent}  from'./tests/test-paragraph/test-paragraph.component';
 
+import {TestsComponent} from './tests/tests.component'
+
 @NgModule({
   imports:      [
     BrowserModule
@@ -28,7 +30,7 @@ import {TestParagraphComponent}  from'./tests/test-paragraph/test-paragraph.comp
     , ReactiveFormsModule
   ],
   entryComponents: [  ],
-  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent ],
+  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent,TestsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

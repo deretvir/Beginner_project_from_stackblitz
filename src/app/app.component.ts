@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
   template: `
   <app-input   (itemNameChange)="updateItem($event)"></app-input>
   <app-btn (onAddItem)="addItem()" ></app-btn>
+  <app-tests></app-tests>
 
   `,
   styleUrls: [ './app.component.css' ]
