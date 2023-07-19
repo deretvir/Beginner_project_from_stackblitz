@@ -13,10 +13,15 @@ import {DemoMaterialModule} from '../material.module';
 import { AppComponent } from './app.component';
 import {BtnComponent} from './btn/btn.component';
 import {InputComponent} from './input/input.component';
+
 import {TestBtnComponent} from './tests/test-btn/test-btn.component';
 import {TestParagraphComponent}  from'./tests/test-paragraph/test-paragraph.component';
-
 import {TestsComponent} from './tests/tests.component'
+
+import {AttributeDirectivesComponent} from './directives/attribute-directives/attribute-directives.component';
+import {DirectivesComponent} from './directives/directives.component';
+import {StructutalDirectivesComponent} from  './directives/./structutal-directives/structutal-directives.component';
+
 
 @NgModule({
   imports:      [
@@ -30,7 +35,7 @@ import {TestsComponent} from './tests/tests.component'
     , ReactiveFormsModule
   ],
   entryComponents: [  ],
-  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent,TestsComponent ],
+  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent,TestsComponent,AttributeDirectivesComponent, DirectivesComponent,StructutalDirectivesComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
