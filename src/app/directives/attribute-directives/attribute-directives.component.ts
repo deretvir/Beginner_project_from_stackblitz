@@ -4,9 +4,11 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-attribute-directives',
   template: `
   <h2>Attribute Directives</h2>
-  <div (click)="changeErrorStatus()" class="attributeDirectiveBox"></div>
+  <div (click)="changeErrorStatus()" class="attributeDirectiveBox"   [ngClass]="isError&&'error'">toogle btn</div>
   `,
-  styles:['.attributeDirectiveBox{ width:50px; height:50px; border:2px solid black; cursor:pointer;']
+  styles:[`.attributeDirectiveBox{ width:50px; height:50px; border:2px solid black; cursor:pointer;}
+  .error{background-color:red;}
+  `]
 })
 export class AttributeDirectivesComponent {
 
@@ -15,6 +17,8 @@ export class AttributeDirectivesComponent {
   changeErrorStatus():void{
     this.isError=!this.isError;
   }
+
+  currentCLasses
 
 }
 
