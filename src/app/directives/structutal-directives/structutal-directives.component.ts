@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-structutal-directives',
-  templateUrl: './structutal-directives.component.html',
+  template: `
+  <h2>Structural Directives</h2>`,
   styleUrls: ['./structutal-directives.component.css']
 })
-export class StructutalDirectivesComponent implements OnInit {
+export class StructutalDirectivesComponent  {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  
+  
 
 }

@@ -2,14 +2,20 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-attribute-directives',
-  templateUrl: './attribute-directives.component.html',
-  styleUrls: ['./attribute-directives.component.css']
+  template: `
+  <h2>Attribute Directives</h2>
+  <div (click)="changeErrorStatus()" class="attributeDirectiveBox"></div>
+  `,
+  styles:['.attributeDirectiveBox{ width:50px; height:50px; border:2px solid black; cursor:pointer;']
 })
-export class AttributeDirectivesComponent implements OnInit {
+export class AttributeDirectivesComponent {
 
-  constructor() { }
+  isError:boolean=false;
 
-  ngOnInit() {
+  changeErrorStatus():void{
+    this.isError=!this.isError;
   }
 
 }
+
+//attributeDirectiveError
