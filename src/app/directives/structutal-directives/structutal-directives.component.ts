@@ -11,6 +11,13 @@ import { Component, OnInit } from '@angular/core';
   <li *ngFor="let item of arr1; let i=index">{{status?arr1.length-i:i}}: {{item}}</li>
   </div>
 
+  <div [ngSwitch]="color">
+  <p *ngSwitchCase="'red'">Red color selected</p>
+  <p *ngSwitchCase="'green'">Green color selected</p>
+  <p *ngSwitchDefault>No color selected</p>
+</div>
+
+
   `,
   styleUrls: ['./structutal-directives.component.css']
 })
@@ -24,4 +31,5 @@ handleStatus(){
   
 arr1:number[]=[1,2,3,4,5]
 
+color:string="red"
 }
