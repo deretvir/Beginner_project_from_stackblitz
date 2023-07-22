@@ -21,8 +21,9 @@ import {TestsComponent} from './tests/tests.component'
 import {AttributeDirectivesComponent} from './directives/attribute-directives/attribute-directives.component';
 import {DirectivesComponent} from './directives/directives.component';
 import {StructutalDirectivesComponent} from  './directives/./structutal-directives/structutal-directives.component';
-
-
+ 
+import{LocalReferencesinTemplateComponent} from './local-referencesin-template/local-referencesin-template.component'
+ 
 @NgModule({
   imports:      [
     BrowserModule
@@ -35,7 +36,7 @@ import {StructutalDirectivesComponent} from  './directives/./structutal-directiv
     , ReactiveFormsModule
   ],
   entryComponents: [  ],
-  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent,TestsComponent,AttributeDirectivesComponent, DirectivesComponent,StructutalDirectivesComponent ],
+  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent,TestsComponent,AttributeDirectivesComponent, DirectivesComponent,StructutalDirectivesComponent,LocalReferencesinTemplateComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

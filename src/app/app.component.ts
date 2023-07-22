@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
   <app-btn (onAddItem)="addItem()" ></app-btn>
   <app-tests></app-tests>
 <app-directives></app-directives>
+<app-local-referencesin-template></app-local-referencesin-template>
   
 
   `,
