@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-local-referencesin-template',
   template: `
 
   <label for="textInput">Note the red caret:</label>
-<input id="textInput" type="text" #localReference size="32" />
+<input id="textInput" type="text" #localReference #childRef size="32" />
   
   <button (click)="handleLocalReference(localReference)">handle local reference</button>
   `,
@@ -13,8 +13,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalReferencesinTemplateComponent  {
 
+@ViewChild ('childRef', {static: true}) inputElement: ElementRef;
+
   handleLocalReference(x:HTMLInputElement){
-console.log(typeof x.value)
+console.log(x)
+console.log(this.inputElement)
+
+
+
+
   }
 
 }
