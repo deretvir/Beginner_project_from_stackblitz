@@ -13,11 +13,11 @@ import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
 })
 export class LocalReferencesinTemplateComponent  {
 
-@ViewChild ('childRef', {static: true}) inputElement: ElementRef;
+@ViewChild ('childRef', {static: true}) inputElement:ElementRef;
 
   handleLocalReference(x:HTMLInputElement){
-console.log(x)
-console.log(this.inputElement)
+console.log(x.value)
+console.log(this.inputElement.nativeElement.value)
 
 
 
