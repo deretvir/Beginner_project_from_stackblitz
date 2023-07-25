@@ -15,7 +15,6 @@ import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
   <app-ng-content-example>IPHONE X10</app-ng-content-example>
   <app-ng-content-example>Samsung S8</app-ng-content-example>
   <app-ng-content-example>IPHONE L20</app-ng-content-example>
-
   </div>
   `,
   styleUrls: ['./local-referencesin-template.component.css']
