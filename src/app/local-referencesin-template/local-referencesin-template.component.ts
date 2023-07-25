@@ -8,6 +8,9 @@ import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
 <input id="textInput" type="text" #localReference #childRef size="32" />
   
   <button (click)="handleLocalReference(localReference)">handle local reference</button>
+  <p>Local reference: {{inputElement.nativeElement}}</p>
+  <p>@ViewChild   -  inputElement.nativeElement: {{inputElement.nativeElement.value}}</p>
+  <app-ng-content-example></app-ng-content-example>
   `,
   styleUrls: ['./local-referencesin-template.component.css']
 })
