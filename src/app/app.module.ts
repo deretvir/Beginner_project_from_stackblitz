@@ -25,6 +25,8 @@ import {StructutalDirectivesComponent} from  './directives/./structutal-directiv
 import{LocalReferencesinTemplateComponent} from './local-referencesin-template/local-referencesin-template.component'
 
 import {NgContentExampleComponent} from'./local-referencesin-template/ng-content-example/ng-content-example.component'
+
+import {ComponentLifecycleComponent} from './component-lifecycle/component-lifecycle.component'
  
 @NgModule({
   imports:      [
@@ -38,7 +40,7 @@ import {NgContentExampleComponent} from'./local-referencesin-template/ng-content
     , ReactiveFormsModule
   ],
   entryComponents: [  ],
-  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent,TestsComponent,AttributeDirectivesComponent, DirectivesComponent,StructutalDirectivesComponent,LocalReferencesinTemplateComponent, NgContentExampleComponent],
+  declarations: [ AppComponent,BtnComponent,InputComponent, TestBtnComponent,TestParagraphComponent,TestsComponent,AttributeDirectivesComponent, DirectivesComponent,StructutalDirectivesComponent,LocalReferencesinTemplateComponent, NgContentExampleComponent, ComponentLifecycleComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 <app-directives></app-directives>
 <app-local-referencesin-template></app-local-referencesin-template>
   
+<app-component-lifecycle>
+lifecycle comp
+</app-component-lifecycle>
 
   `,
   styleUrls: [ './app.component.css' ]
