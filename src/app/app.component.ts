@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 <app-directives></app-directives>
 <app-local-referencesin-template></app-local-referencesin-template>
   
-<app-component-lifecycle>
+<app-component-lifecycle [counter]="num">
 lifecycle comp
 </app-component-lifecycle>
 
@@ -20,6 +20,7 @@ lifecycle comp
 export class AppComponent  {
   item="";
   arr:string[]=[];
+  num:number=3;
 
   updateItem(itemName:string){
     this.item=itemName;
