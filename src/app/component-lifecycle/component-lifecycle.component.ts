@@ -4,19 +4,22 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 
 @Component({
   selector: 'app-component-lifecycle',
-  template: '<p>{{ timeLeft }}</p>'
+  template: `<p>{{ timeLeft }}</p>
+  <p #local>LocalReferrence</p>`
 })
 export class ComponentLifecycleComponent implements OnInit, OnDestroy {
   timeLeft: number = 10;
   intervalId: any;
   @Input()  counter:number;
 
- 
+ constructor(){
+   
+ }
 
   ngOnInit() {
     // Start the timer when the component is initialized
     this.startTimer();
-    console.log('start', this.counter)
+    
 
   }
 
